@@ -1,3 +1,3 @@
-module github.com/dougbeal/hugo-theme-terminal.git
+module github.com/dougbeal/hugo-theme-terminal
 
 go 1.13
