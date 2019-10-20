@@ -27,8 +27,13 @@
       {{ end }}
     {{ end }}
 
+    {{ if (or $.Site.Params.showLanguageSelector (gt (len .AlternativeOutputFormats) 0 ) ) }}
+          <div class="spacer"></div>
+    {{ end }}
+
+    {{ partial "alternate-media-type-links.html" . }}
+
     {{ if $.Site.Params.showLanguageSelector }}
-    <div class="spacer"></div>
     <ul class="language-selector">
       <ul class="language-selector-current">
           <li>{{ .Language.LanguageName }} ▾</li>
